@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import AddPost from './components/AddPost';
 import SearchPost from './components/SearchPost';
@@ -16,7 +15,6 @@ function App() {
     <Route path='/view' element={<ViewPost/>}/>
   </Routes>
   </BrowserRouter>
-
   );
 }
 
