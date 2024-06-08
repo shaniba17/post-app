@@ -6,7 +6,14 @@ const ViewPost = () => {
   const [data, changedata] = useState([])
   const fetchData=() =>
     {
-     axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {changedata(response.data)}).catch().finally()
+     axios.get("https://jsonplaceholder.typicode.com/posts")
+     .then(
+      response => {
+        console.log(response.data)
+        changedata(response.data)
+
+      })
+      .catch().finally()
     }
     useEffect(()=>{fetchData()},[])
   return (
